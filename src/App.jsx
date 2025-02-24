@@ -1,9 +1,9 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import Feedback from "./componets/Feedback";
-import Options from "./componets/Options";
-import Notification from "./componets/Notification";
-import styles from "./componets/styles.module.css";
+import Feedback from "./components/Feedback";
+import Options from "./components/Options";
+import Notification from "./components/Notification";
+import styles from "./components/styles.module.css";
 
 export default function App() {
   const [feedback, setFeedback] = useState(() => {
