@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Feedback from "./components/Feedback";
 import Options from "./components/Options";
 import Notification from "./components/Notification";
+import Description from "./components/Description";
 import styles from "./components/styles.module.css";
 
 export default function App() {
@@ -39,11 +40,7 @@ export default function App() {
 
   return (
     <div className={styles.app}>
-      <h1>Sip Happens Café</h1>
-      <p>
-        Please leave your feedback about our service by selecting one of the
-        options below.
-      </p>
+      <Description />
       <Options
         options={Object.keys(feedback)}
         onLeaveFeedback={handleFeedback}
